@@ -1,0 +1,118 @@
+/* Container */
+.guideline-section {
+  margin: 3rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.guideline-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: #111827; /* dark gray */
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+/* Responsive Video Wrapper */
+.guideline-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+}
+
+.guideline-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* Grid Layout for Dos and Don'ts */
+.guideline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* On small screens, stack vertically */
+@media (max-width: 640px) {
+  .guideline-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Articles container - no cards */
+.guideline-article {
+  /* No background, no border, no shadow for card-less look */
+  padding: 0;
+}
+
+/* Headers */
+.guideline-header {
+  margin-bottom: 1rem;
+}
+
+.guideline-header h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Colors for dos and donts */
+.guideline-dos .guideline-header h3 {
+  color: #166534; /* green-800 */
+}
+
+.guideline-donts .guideline-header h3 {
+  color: #991b1b; /* red-800 */
+}
+
+/* List styles */
+.guideline-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.guideline-list-item {
+  margin-bottom: 1.5rem;
+}
+
+/* Text */
+.guideline-text {
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  display: inline-block;
+}
+
+.guideline-dos .guideline-text {
+  color: #14532d; /* green-900 */
+}
+
+.guideline-donts .guideline-text {
+  color: #7f1d1d; /* red-900 */
+}
+
+/* Detail text */
+.guideline-detail {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.guideline-dos .guideline-detail {
+  color: #4d7c0f; /* green-700 */
+}
+
+.guideline-donts .guideline-detail {
+  color: #b91c1c; /* red-700 */
+}
